@@ -30,13 +30,29 @@ namespace MethodsPractice
 
             //RobotWarning("Will Robinson");
             //Useless();
+            //FavoriteFood("orange", "pizza");
+            //RetirementCalculator(35);
 
-            string myBirthMonth = "September";
-            string myFriendBirthMonth = "December";
-            string myVehicle = Vehicle(myBirthMonth);
-            string myFriendVehicle = Vehicle(myFriendBirthMonth);
+            //string myBirthMonth = "September";
+            //string myFriendBirthMonth = "December";
+            //string myVehicle = Vehicle(myBirthMonth);
+            //string myFriendVehicle = Vehicle(myFriendBirthMonth);
 
-            Console.WriteLine("My future vehicle is {0} and Jordan's future vehicle {1}.", myVehicle, myFriendVehicle);
+            //Console.WriteLine("My future vehicle is {0} and Jordan's future vehicle {1}.", myVehicle, myFriendVehicle);
+
+            double hoursWorked = 42.3d;
+            double hourlyWage = 12.50d;
+
+            Console.WriteLine("Your monthly wage is {0}.", WageCalculator(hoursWorked, hourlyWage));
+
+
+
+
+
+
+
+
+
         }
 
         //Method header
@@ -80,6 +96,36 @@ namespace MethodsPractice
             }
 
             return vehicleFortune;
+        }
+
+        //Create a method called FavoriteFood
+        public static void FavoriteFood(string name, string food)
+        {
+            Console.WriteLine(name + "{0}'s favorite food is {1}" + food);
+        }
+        //It should take two string parameters. One representing a name, and the other representing a favorite food
+        //The return type should be void
+        //The method should concatenate
+
+        //Create a method called RetirementCalculator
+        //It should take an int as a parameter representing the user's age
+        //the method should calculate how many more years until the user retires using 65 as the age of retirement.
+        //The return type should be void.
+        //Once it calculates the user's retirement age it should print
+        //"The user will retire in X years" where X represents the value that was calculated
+        public static void RetirementCalculator(int userAge)
+        {
+            int retirement = 65 - userAge;
+            Console.WriteLine($"The user will retire in {retirement} years");
+        }
+
+
+
+        public static double WageCalculator(double hoursWorkedWeekly, double hourlyWage)
+        {
+            //This method should calculate the monthly wage
+            double monthlyWage = (hoursWorkedWeekly * 52 * hourlyWage) / 12;
+            return monthlyWage;
         }
 
 
