@@ -28,7 +28,7 @@ namespace MethodsPractice
 
             //Console.WriteLine("The sum of your two numbers is " + answer);
 
-            //RobotWarning("Will Robinson");
+            tomHamilton("A swing and a drive");
             //Useless();
             //FavoriteFood("orange", "pizza");
             //RetirementCalculator(35);
@@ -71,38 +71,38 @@ namespace MethodsPractice
         //If you have a method that does not have a return value, you would use the keyword
         //"void". When we have a "void" return type we DON'T need to use the keyword "return"
 
-        public static void RobotWarning(string name)
-        {
-            Console.WriteLine("Danger, " + name + "!!");
-        }
+        //public static void RobotWarning(string name)
+        //{
+        //    Console.WriteLine("Danger, " + name + "!!");
+        //}
 
-        public static void Useless()
-        {
-            Console.WriteLine("Blah blah blah");
-        }
+        //public static void Useless()
+        //{
+        //    Console.WriteLine("Blah blah blah");
+        //}
 
 
 
-        public static string Vehicle(string birthMonth)
-        {
-            string vehicleFortune;
-            if (birthMonth.ToUpper() == "SEPTEMBER" || birthMonth.ToUpper() == "OCTOBER")
-            {
-                vehicleFortune = "Hoverboard";
-            }
-            else
-            {
-                vehicleFortune = "Web swinging";
-            }
+        //public static string Vehicle(string birthMonth)
+        //{
+        //    string vehicleFortune;
+        //    if (birthMonth.ToUpper() == "SEPTEMBER" || birthMonth.ToUpper() == "OCTOBER")
+        //    {
+        //        vehicleFortune = "Hoverboard";
+        //    }
+        //    else
+        //    {
+        //        vehicleFortune = "Web swinging";
+        //    }
 
-            return vehicleFortune;
-        }
+        //    return vehicleFortune;
+        //}
 
         //Create a method called FavoriteFood
-        public static void FavoriteFood(string name, string food)
-        {
-            Console.WriteLine(name + "{0}'s favorite food is {1}" + food);
-        }
+        //public static void FavoriteFood(string name, string food)
+        //{
+        //    Console.WriteLine(name + "{0}'s favorite food is {1}" + food);
+        //}
         //It should take two string parameters. One representing a name, and the other representing a favorite food
         //The return type should be void
         //The method should concatenate
@@ -128,6 +128,20 @@ namespace MethodsPractice
             return monthlyWage;
         }
 
+        //Create two methods of your choosing. At least one of the methods should have a non-void return type.
+        //Both of the methods should take at least one parameter.
+        //Remember when naming your method that it should represent what your method does.
+        //Your method should only aim to accomplish one thing.
+        //Be Creative
 
+        public static void tomHamiltion(string name)
+        {
+            Console.WriteLine("A swing and a drive, " + name + "!!");
+        }
+
+        public static void Useless()
+        {
+            Console.WriteLine("BALL GAME");
+        }
     }
 }
